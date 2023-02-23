@@ -1,0 +1,31 @@
+.terminal {
+  background-color: black;
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.terminal:before {
+  content: '$ ';
+}
+
+.terminal-input {
+  color: #fff;
+  display: inline;
+}
+
+.terminal-output {
+  display: block;
+}
+
+.terminal-output:before {
+  content: '> ';
+  color: #00ff00;
+}
+
+.terminal-output-error:before {
+  content: '! ';
+  color: #ff0000;
+}
