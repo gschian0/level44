@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
       // This is the text prompt that will be submitted by a form on the frontend
       input: { prompt: req.body.prompt, heith: 512, width: 512,
-      guidance_scale: 9.9, },
+      guidance_scale: 9., num_inference_steps: 250, },
     }),
   });
 
