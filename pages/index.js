@@ -2,6 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Tetrahedron from "./components/Tetrahedron";
 // import scrolls from "../styles/Scrolls.module.css";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -55,6 +56,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
             LEVEL 44 DOT ART{" "}
           </h1>
+          {/* <Tetrahedron></Tetrahedron> */}
           <p className="text-2xl text-center text-gray-600 mb-4">
             <a href="https://replicate.com/22-hours/vintedois-diffusion/versions/28cea91bdfced0e2dc7fda466cc0a46501c0edc84905b2120ea02e0707b967fd">
               educate yourself
@@ -76,7 +78,10 @@ export default function Home() {
           {error && <div className="text-red-500 mt-4">{error}</div>}
 
           {prediction && (
+            
             <div className="mt-8 text-center">
+            <p className="text-lg mt-4">status: {prediction.status}</p>
+            
               {prediction.output && (
                 <div className="imageWrapper">
                   <Image
@@ -87,20 +92,21 @@ export default function Home() {
                     width="640"
                     height="640"
                     className="max-w-full h-auto mx-auto"
-                    style={{ maxWidth: '640px', maxHeight: '640px' }}
+                    style={{ maxWidth: '75vw', maxHeight: '75vw' }}
                   />
-                <div className="scrolls"></div>
-
+               
                 </div>
                 
               )}
-              <p className="text-lg mt-4">status: {prediction.status}</p>
+              
+         
             </div>
           )}
         </div>
       </div>
         
     </div>
+    
     <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()} courtesy Gennaro Schiano, Alan Mitchell, and David Simon © SEED DIGITAL</p></footer>
     </div>
   );

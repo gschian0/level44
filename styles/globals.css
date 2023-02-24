@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-
+canvas {
+  display: block;
+  margin: 0 auto;
+}
 body {
   background: linear-gradient(to bottom, #f1f2f4 0%, #f1f2f4 50%, #ffffff 50%, #ffffff 100%);
 }

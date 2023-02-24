@@ -1,3 +1,9 @@
+THIS IS A REPO FOR MY NEXT JS PROJECT THAT USES REPLICATE.COM API TO GET DATA AND DISPLAY IT ON THE FRONT END.  THIS IS AN EXPERIMENT TO GET MONEY TO SUPPORT ARTISTIC ENDEAVORS >>>  https://www.level44.com/ <<<    >>> 
+
+
+
+INCLUDED NEXT JS HELP SO YOU DON'T HAVE TO GO TO THEIR SITE TO GET STARTED :)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
