@@ -53,7 +53,7 @@ export default function Home() {
           <title>LEVEL_44_DOT_ART</title>
         </Head>
         <div className="gradient-box" height="100vh">
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
+        <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
             LEVEL 44 DOT ART{" "}
           </h1>
           {/* <Tetrahedron></Tetrahedron> */}
