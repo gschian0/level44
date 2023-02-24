@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div>
     
-    <div height="100vh" className="bg-gradient-to-b from-indigo-500 to-pink-500 border-solid scrolls ">
+    <div height="100vh" className="subpixel-antialiased bg-gradient-to-b from-indigo-500 to-pink-500 border-solid scrolls ">
       <div className="container mx-auto py-10 border-solid">
         <Head>
           <title>LEVEL_44_DOT_ART</title>
@@ -60,12 +60,13 @@ export default function Home() {
               educate yourself
             </a>
           </p>
-          <form className="flex flex-col items-center text-slate-900" onSubmit={handleSubmit}>
+          <form className="flex flex-col items-center  w-full text-slate-900" onSubmit={handleSubmit}>
             <input
+            
               type="text"
               name="prompt"
               placeholder="Enter a prompt to display an image"
-              className="form-input mb-4 p-4 rounded-lg text-center"
+              className="form-input mb-5 p-5 rounded-lg text-center"
             />
             <button type="submit" className="btn">
               CLICK TO DREAM!
@@ -100,7 +101,7 @@ export default function Home() {
       </div>
         
     </div>
-    <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()} courtesy Gennaro Schiano, Alan Mitchell, and David Simon</p></footer>
+    <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()} courtesy Gennaro Schiano, Alan Mitchell, and David Simon © SEED DIGITAL</p></footer>
     </div>
   );
 }
