@@ -11,8 +11,8 @@ export default async function handler(req, res) {
       version: "28cea91bdfced0e2dc7fda466cc0a46501c0edc84905b2120ea02e0707b967fd",
 
       // This is the text prompt that will be submitted by a form on the frontend
-      input: { prompt: req.body.prompt, heith: 512, width: 512,
-      guidance_scale: 9.9, },
+      input: { prompt: req.body.prompt, heith: 640, width: 640,
+      guidance_scale: 10., num_inference_steps: 35, },
     }),
   });
 
