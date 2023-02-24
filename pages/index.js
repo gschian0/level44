@@ -2,6 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+// import scrolls from "../styles/Scrolls.module.css";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -42,14 +43,15 @@ export default function Home() {
       setPrediction(prediction);
     }
   };
-
   return (
-    <div className="bg-gradient-to-b from-indigo-500 to-pink-500">
-      <div className="container mx-auto py-10">
+    <div>
+    
+    <div height="100vh" className="bg-gradient-to-b from-indigo-500 to-pink-500 border-solid scrolls ">
+      <div className="container mx-auto py-10 border-solid">
         <Head>
-          <title>Replicate + Next.js</title>
+          <title>LEVEL_44_DOT_ART</title>
         </Head>
-        <div className="gradient-box">
+        <div className="gradient-box" height="100vh">
           <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
             LEVEL 44 DOT ART{" "}
           </h1>
@@ -58,15 +60,15 @@ export default function Home() {
               educate yourself
             </a>
           </p>
-          <form className="flex flex-col items-center" onSubmit={handleSubmit}>
+          <form className="flex flex-col items-center text-slate-900" onSubmit={handleSubmit}>
             <input
               type="text"
               name="prompt"
               placeholder="Enter a prompt to display an image"
-              className="form-input mb-4 p-4 rounded-lg"
+              className="form-input mb-4 p-4 rounded-lg text-center"
             />
             <button type="submit" className="btn">
-              Go!
+              CLICK TO DREAM!
             </button>
           </form>
 
@@ -77,20 +79,28 @@ export default function Home() {
               {prediction.output && (
                 <div className="imageWrapper">
                   <Image
-                    fill
+                    
                     src={prediction.output[prediction.output.length - 1]}
                     alt="output"
-                    sizes="50%"
+                    sizes="100%"
+                    width="640"
+                    height="640"
                     className="max-w-full h-auto mx-auto"
-                    style={{ maxWidth: '400px', maxHeight: '400px' }}
+                    style={{ maxWidth: '640px', maxHeight: '640px' }}
                   />
+                <div className="scrolls"></div>
+
                 </div>
+                
               )}
               <p className="text-lg mt-4">status: {prediction.status}</p>
             </div>
           )}
         </div>
       </div>
+        
+    </div>
+    <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()} courtesy Gennaro Schiano, Alan Mitchell, and David Simon</p></footer>
     </div>
   );
 }

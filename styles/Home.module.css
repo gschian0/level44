@@ -7,12 +7,7 @@
   min-height: 100vh;
 }
 
-.imageWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -38,6 +33,22 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+.scrolls {
+  background: url('https://i.imgur.com/1sEMmRc.jpg');
+  animation: scrolls 20s ease-in-out infinite;
+}
+
+@keyframes scrolls {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .code {
